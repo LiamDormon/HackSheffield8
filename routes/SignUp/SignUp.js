@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import Button from '../../components/Button.js';
 
-export default function SignUp() {
+export default function SignUp({navigation}) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -28,7 +28,9 @@ export default function SignUp() {
                         onChangeText={setPassword}
                         placeholder="Password" />
                 </View>
-                <Button style title="Sign up"></Button>
+                <Button style title="Next" onPress={() => {
+              navigation.navigate('CreateProfile');
+                }}></Button>
             </View>
         
             <StatusBar style="auto" />
@@ -63,4 +65,4 @@ const styles = StyleSheet.create({
         backgroundColor: '#eee',
         width: 100
     }
-  });
+});
