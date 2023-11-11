@@ -17,8 +17,8 @@ export default function App() {
           headerShown: false
         }} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="CreateProfile" component={CreateProfile} />
+        <Stack.Screen name="SignUp" component={SignUp} options={{title:"Create an Account"}} />
+        <Stack.Screen name="CreateProfile" component={CreateProfile} options={{title: "Create your profile"}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
