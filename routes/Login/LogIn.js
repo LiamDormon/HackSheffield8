@@ -2,11 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 import Button from '../../components/Button.js';
 
-export default function Login() {
+export default function Login({navigation}) {
   return (
     <View >
       <Image></Image>
-      <Text > Log in! </Text>
+      <Text>Log in!</Text>
       <View>
         <TextInput 
           placeholder="Username" />
@@ -14,12 +14,9 @@ export default function Login() {
           secureTextEntry={true}
           placeholder="Password"
         />
-        <Button style={{button: {backgroundColor: "black"}}} title="Log in" onPress={() => {
+        <Button style title="Log in" onPress={() => {
             navigation.navigate('SwipingPage');
-          }}>
-        </Button>
-
-
+          }}></Button>
       </View>
     </View>
   );

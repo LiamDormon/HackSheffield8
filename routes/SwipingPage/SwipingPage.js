@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { GestureDetector, Gesture } from 'react-native-gesture-handler';
+
 
 function EditProfile() {
     
