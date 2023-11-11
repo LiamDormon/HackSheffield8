@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import Button from '../../components/Button.js';
 
 export default function SignUp() {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
     return (
         <View style={styles.container}>
             <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200}} />
@@ -12,11 +15,18 @@ export default function SignUp() {
             <View style={styles.form}>
                 <View style={styles.formRow}>
                     <Text>Username: </Text>
-                    <TextInput style={styles.textInput}></TextInput>
+                    <TextInput
+                        value={username}
+                        onChangeText={setUsername}
+                        placeholder="Username" />
                 </View>
                 <View style={styles.formRow}>
                     <Text>Password: </Text>
-                    <TextInput style={styles.textInput}></TextInput>
+                    <TextInput
+                        secureTextEntry={true}
+                        value={password}
+                        onChangeText={setPassword}
+                        placeholder="Password" />
                 </View>
                 <Button style title="Sign up"></Button>
             </View>
