@@ -3,14 +3,16 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Button from '../../components/Button.js';
 
-export default function Home() {
+export default function Home({navigation}) {
     return (
         <View style={styles.container}>
           <Text style={styles.title}>You've Got Crabs!</Text>
           <Text> Ending crustacean frustration </Text>
     
           <View style={styles.buttonContainer}>
-            <Button style={{button: {backgroundColor: "black"}}} title="Login"></Button>
+            <Button style={{button: {backgroundColor: "black"}}} title="Login" onPress={() => {
+              navigation.navigate('Login');
+            }}></Button>
             <Button style title="Sign Up"></Button>
           </View>
     
