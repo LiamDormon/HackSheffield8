@@ -13,7 +13,9 @@ export default function Home({navigation}) {
             <Button style={{button: {backgroundColor: "black"}}} title="Login" onPress={() => {
               navigation.navigate('Login');
             }}></Button>
-            <Button style title="Sign Up"></Button>
+            <Button title="Sign Up" onPress={() => {
+              navigation.navigate('SignUp');
+            }}></Button>
           </View>
     
           <StatusBar style="auto" />
