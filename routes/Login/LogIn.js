@@ -14,7 +14,12 @@ export default function Login() {
           secureTextEntry={true}
           placeholder="Password"
         />
-        <Button style title="Log in"></Button>
+        <Button style={{button: {backgroundColor: "black"}}} title="Log in" onPress={() => {
+            navigation.navigate('SwipingPage');
+          }}>
+        </Button>
+
+
       </View>
     </View>
   );
