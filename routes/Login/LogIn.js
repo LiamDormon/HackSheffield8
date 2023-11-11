@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 import Button from '../../components/Button.js';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -22,12 +23,16 @@ export default function Login() {
           onChangeText={setPassword}
           placeholder="Password"
         />
-        <Button style title="Log in" onPress={() => {
-          const localUser = store.get("@localuser")
-          if (localUser.username === username && localUser.password === password) {
-            navigation.navigate('Home');
+        <Button style title="Log in" onPress={async () => {
+          const user = await AsyncStorage.getItem('@localuser');
+          if (user) {
+            if (user.username === username && user.password === password) {
+              alert('Logged in!');
+            } else {
+              alert('Incorrect username or password.');
+            }
           } else {
-            alert("Incorrect username or password")
+            alert('User not found');
           }
         }}></Button>
       </View>
