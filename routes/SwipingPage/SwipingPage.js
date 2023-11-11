@@ -19,7 +19,6 @@ const [bio, setBio] = useState("...")
 
   return (
     <View style={styles.container}>
-      <Image></Image>
       <Text style={styles.title}>Placeholder</Text>
       <Text>Placeholder Bio</Text>
       <StatusBar style="auto" />

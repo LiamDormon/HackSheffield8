@@ -9,7 +9,6 @@ export default function Login({navigation}) {
 
   return (
     <View >
-      <Image></Image>
       <Text>Log in!</Text>
       <View>
         <TextInput
