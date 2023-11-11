@@ -1,22 +1,37 @@
+import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 import Button from '../../components/Button.js';
 
 export default function Login({navigation}) {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <View >
       <Image></Image>
       <Text>Log in!</Text>
       <View>
-        <TextInput 
+        <TextInput
+          value={username}
+          onChangeText={setUsername}
           placeholder="Username" />
         <TextInput
           secureTextEntry={true}
+          value={password}
+          onChangeText={setPassword}
           placeholder="Password"
         />
-        <Button style title="Log in" onPress={() => {
-            navigation.navigate('SwipingPage');
-          }}></Button>
+        
+        <Button>
+          const localUser = store.get("@localuser")
+          if (localUser.username === username && localUser.password === password) {
+            navigation.navigate('Home')
+          };
+          else {
+            alert("Incorrect username or password")
+          }
+        </Button>
       </View>
     </View>
   );
