@@ -1,11 +1,12 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 import Button from '../../components/Button.js';
 
 export default function Home({navigation}) {
     return (
         <View style={styles.container}>
+          <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200}} />
           <Text style={styles.title}>You've Got Crabs!</Text>
           <Text> Ending crustacean frustration </Text>
     
