@@ -5,6 +5,7 @@ import Home from "./routes/Home/Home.js";
 import Login from "./routes/Login/Login.js";
 import SignUp from './routes/SignUp/SignUp.js';
 import CreateProfile from './routes/SignUp/CreateProfile.js';
+import SwipingPage from "./routes/SwipingPage/SwipingPage.js"
 
 const Stack = createNativeStackNavigator();
 
