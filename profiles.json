@@ -1,0 +1,242 @@
+[
+    {
+        "name": "Cindy",
+        "gender": "Female",
+        "age": "4",
+        "species": "Horseshoe Crab",
+        "ocean": "Pacific",
+        "bio": "Pinch out if you're a lobster!!"
+    },
+    {
+        "name": "Crabby",
+        "gender": "Male",
+        "age": "6",
+        "species": "Blue Crab",
+        "ocean": "Atlantic",
+        "bio": "Feeling blue and loving it."
+    },
+    {
+        "name": "Shelly",
+        "gender": "Female",
+        "age": "5",
+        "species": "Hermit Crab",
+        "ocean": "Indian",
+        "bio": "Home is where the shell is."
+    },
+    {
+        "name": "King",
+        "gender": "Male",
+        "age": "7",
+        "species": "King Crab",
+        "ocean": "Pacific",
+        "bio": "Long live the king."
+    },
+    {
+        "name": "Snowy",
+        "gender": "Female",
+        "age": "4",
+        "species": "Snow Crab",
+        "ocean": "Arctic",
+        "bio": "Chilling in the cold."
+    },
+    {
+        "name": "Rocky",
+        "gender": "Male",
+        "age": "5",
+        "species": "Rock Crab",
+        "ocean": "Atlantic",
+        "bio": "Solid as a rock."
+    },
+    {
+        "name": "Dungeness",
+        "gender": "Female",
+        "age": "6",
+        "species": "Dungeness Crab",
+        "ocean": "Pacific",
+        "bio": "Living the high life in the Pacific."
+    },
+    {
+        "name": "Ghost",
+        "gender": "Male",
+        "age": "3",
+        "species": "Ghost Crab",
+        "ocean": "Indian",
+        "bio": "I might be transparent, but my personality isn't."
+    },
+    {
+        "name": "Fiddler",
+        "gender": "Female",
+        "age": "4",
+        "species": "Fiddler Crab",
+        "ocean": "Atlantic",
+        "bio": "Playing the tune of the tides."
+    },
+    {
+        "name": "Horseshoe",
+        "gender": "Male",
+        "age": "7",
+        "species": "Horseshoe Crab",
+        "ocean": "Pacific",
+        "bio": "Older than the dinosaurs and still kicking."
+    },
+    {
+        "name": "Mud",
+        "gender": "Male",
+        "age": "2",
+        "species": "Mud Crab",
+        "ocean": "Indian",
+        "bio": "Down and dirty, that's me."
+    },
+    {
+        "name": "Sponge",
+        "gender": "Female",
+        "age": "3",
+        "species": "Sponge Crab",
+        "ocean": "Atlantic",
+        "bio": "Soaking up the good life."
+    },
+    {
+        "name": "Pea",
+        "gender": "Male",
+        "age": "1",
+        "species": "Pea Crab",
+        "ocean": "Pacific",
+        "bio": "Small but mighty."
+    },
+    {
+        "name": "Decorator",
+        "gender": "Female",
+        "age": "5",
+        "species": "Decorator Crab",
+        "ocean": "Indian",
+        "bio": "I've got a flair for design."
+    },
+    {
+        "name": "Boxer",
+        "gender": "Male",
+        "age": "4",
+        "species": "Boxer Crab",
+        "ocean": "Atlantic",
+        "bio": "Always ready for a fight."
+    },
+    {
+        "name": "Hermit",
+        "gender": "Female",
+        "age": "6",
+        "species": "Hermit Crab",
+        "ocean": "Pacific",
+        "bio": "Home is where the shell is."
+    },
+    {
+        "name": "Yeti",
+        "gender": "Male",
+        "age": "7",
+        "species": "Yeti Crab",
+        "ocean": "Southern",
+        "bio": "Living in the deep, where it's cool."
+    },
+    {
+        "name": "Spider",
+        "gender": "Female",
+        "age": "3",
+        "species": "Spider Crab",
+        "ocean": "Indian",
+        "bio": "Long legs, don't care."
+    },
+    {
+        "name": "Tasmanian",
+        "gender": "Male",
+        "age": "5",
+        "species": "Tasmanian Giant Crab",
+        "ocean": "Pacific",
+        "bio": "Big and bold, that's me."
+    },
+    {
+        "name": "Coconut",
+        "gender": "Female",
+        "age": "4",
+        "species": "Coconut Crab",
+        "ocean": "Indian",
+        "bio": "Living the tropical dream."
+    },
+    {
+        "name": "Mitten",
+        "gender": "Male",
+        "age": "3",
+        "species": "Mitten Crab",
+        "ocean": "Atlantic",
+        "bio": "Warm and cozy, that's me."
+    },
+    {
+        "name": "Porcelain",
+        "gender": "Female",
+        "age": "2",
+        "species": "Porcelain Crab",
+        "ocean": "Pacific",
+        "bio": "Delicate but strong."
+    },
+    {
+        "name": "Stone",
+        "gender": "Male",
+        "age": "4",
+        "species": "Stone Crab",
+        "ocean": "Atlantic",
+        "bio": "Hard as a rock."
+    },
+    {
+        "name": "Emerald",
+        "gender": "Female",
+        "age": "5",
+        "species": "Emerald Crab",
+        "ocean": "Indian",
+        "bio": "A gem of the sea."
+    },
+    {
+        "name": "Acorn",
+        "gender": "Male",
+        "age": "2",
+        "species": "Acorn Barnacle",
+        "ocean": "Pacific",
+        "bio": "Small but sturdy."
+    },
+    {
+        "name": "Sand",
+        "gender": "Female",
+        "age": "3",
+        "species": "Sand Crab",
+        "ocean": "Atlantic",
+        "bio": "Life's a beach."
+    },
+    {
+        "name": "Rainbow",
+        "gender": "Male",
+        "age": "4",
+        "species": "Rainbow Crab",
+        "ocean": "Indian",
+        "bio": "Colorful and vibrant."
+    },
+    {
+        "name": "Coral",
+        "gender": "Female",
+        "age": "5",
+        "species": "Coral Crab",
+        "ocean": "Pacific",
+        "bio": "Living in a colorful world."
+    },
+    {
+        "name": "Giant",
+        "gender": "Male",
+        "age": "6",
+        "species": "Giant Crab",
+        "ocean": "Atlantic",
+        "bio": "Size matters."
+    },
+    {
+        "name": "Mangrove",
+        "gender": "Female",
+        "age": "3",
+        "species": "Mangrove Crab",
+        "ocean": "Indian",
+        "bio": "Life's better in the mangroves."
+    }
+]
