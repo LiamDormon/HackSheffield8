@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
+import Button from '../../components/Button.js';
 
 export default function SignUp() {
     const [username, setUsername] = useState('');
@@ -8,6 +9,7 @@ export default function SignUp() {
 
     return (
         <View style={styles.container}>
+            <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200}} />
             <Text style={styles.title}>Sign Up</Text>
 
             <View style={styles.form}>
@@ -26,6 +28,7 @@ export default function SignUp() {
                         onChangeText={setPassword}
                         placeholder="Password" />
                 </View>
+                <Button style title="Sign up"></Button>
             </View>
         
             <StatusBar style="auto" />
@@ -48,12 +51,16 @@ const styles = StyleSheet.create({
         margin: 20,
         display: 'flex',
         flexDirection: 'column',
-        gap: 20
+        gap: 10,
+        alignItems: 'left', 
+        justifyContent: 'left',
     },
     formRow: {
-            margin: 20,
-            display: 'flex',
-            flexDirection: 'row',
-            gap: 20
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    textInput: {
+        backgroundColor: '#eee',
+        width: 100
     }
   });

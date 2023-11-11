@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "./routes/Home/Home.js";
 import Login from "./routes/Login/Login.js";
+import SignUp from './routes/SignUp/SignUp.js';
 import SwipingPage from "./routes/SwipingPage/SwipingPage.js"
 
 const Stack = createNativeStackNavigator();
@@ -15,9 +16,7 @@ export default function App() {
           headerShown: false
         }} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="SwipingPage" component={SwipingPage} options={{
-          headerShown: false
-        }} />
+        <Stack.Screen name="SignUp" component={SignUp} />
       </Stack.Navigator>
     </NavigationContainer>
   );
