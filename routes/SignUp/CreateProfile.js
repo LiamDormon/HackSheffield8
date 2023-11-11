@@ -4,8 +4,9 @@ import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import Button from '../../components/Button.js';
 import SelectDropdown from 'react-native-select-dropdown'
 import Slider from '@react-native-community/slider'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function CreateProfile() {
+export default function CreateProfile({route}) {
     const [name, setName] = useState('');
     const [gender, setGender] = useState('');
     const [species, setSpecies] = useState('');
@@ -33,6 +34,8 @@ export default function CreateProfile() {
                         <Slider
                             style={styles.slider}
                             value={gender}
+                            maximumValue={1}
+                            minimumValue={0}
                             onValueChange={setGender} />
                         <Text>Female</Text>
                     </View>
@@ -65,7 +68,20 @@ export default function CreateProfile() {
                         onChangeText={setBio}
                         placeholder="bio" />
                 </View>
-                <Button style title="Submit"></Button>
+                <Button style title="Submit" onPress={() => {
+                    const user = {
+                        username: route?.params?.username ?? "Test",
+                        password: route?.params?.password ?? "password123",
+                        name,
+                        gender,
+                        species,
+                        age,
+                        ocean,
+                        bio
+                    }
+
+                    AsyncStorage.setItem('@localuser', JSON.stringify(user)).then(() => alert('User created!'));
+                }}></Button>
             </View>
         
             <StatusBar style="auto" />

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import Button from '../../components/Button.js';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function SignUp({navigation}) {
     const [username, setUsername] = useState('');
@@ -29,8 +30,11 @@ export default function SignUp({navigation}) {
                         placeholder="Password" />
                 </View>
                 <Button style title="Next" onPress={() => {
-              navigation.navigate('CreateProfile');
-                }}></Button>
+                    navigation.navigate('CreateProfile', {
+                        username: username,
+                        password: password
+                    });
+                }} />
             </View>
         
             <StatusBar style="auto" />
