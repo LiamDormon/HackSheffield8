@@ -23,7 +23,7 @@ export default function Login() {
           placeholder="Password"
         />
         <Button style title="Log in" onPress={async () => {
-          const user = await AsyncStorage.getItem('@localuser');
+          const user = await AsyncStorage.getItem('@localuser').then((user) => JSON.parse(user));
           if (user) {
             if (user.username === username && user.password === password) {
               alert('Logged in!');

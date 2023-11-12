@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "./routes/Home/Home.js";
 import Login from "./routes/Login/Login.js";
 import SignUp from './routes/SignUp/SignUp.js';
+import CreateProfile from './routes/SignUp/CreateProfile.js';
 import Pinching from './routes/Pinching/Pinching.js'
 
 const Stack = createNativeStackNavigator();
@@ -16,7 +17,8 @@ export default function App() {
           headerShown: false
         }} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="SignUp" component={SignUp} options={{title:"Create an Account"}} />
+        <Stack.Screen name="CreateProfile" component={CreateProfile} options={{title: "Create your profile"}} />
         <Stack.Screen name="Pinching" component={Pinching} />
       </Stack.Navigator>
     </NavigationContainer>
