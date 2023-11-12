@@ -9,19 +9,26 @@ export default function Login() {
   const [password, setPassword] = useState('');
 
   return (
-    <View >
-      <Text>Log in!</Text>
-      <View>
-        <TextInput
-          value={username}
-          onChangeText={setUsername}
-          placeholder="Username" />
-        <TextInput
-          secureTextEntry={true}
-          value={password}
-          onChangeText={setPassword}
-          placeholder="Password"
-        />
+    <View style={styles.container}>
+      <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200, resizeMode: 'contain'}} />
+      <Text style={styles.title}>Log in!</Text>
+
+      <View style={styles.form}>
+        <View style={styles.formRow}>
+          <Text>Username: </Text>
+          <TextInput
+            value={username}
+            onChangeText={setUsername}
+            placeholder="Username" />
+        </View>
+        <View style={styles.formRow}>
+          <Text>Password: </Text>
+          <TextInput
+            secureTextEntry={true}
+            value={password}
+            onChangeText={setPassword}
+            placeholder="Password" />
+        </View>
         <Button style title="Log in" onPress={async () => {
           const user = await AsyncStorage.getItem('@localuser').then((user) => JSON.parse(user));
           if (user) {
@@ -35,6 +42,7 @@ export default function Login() {
           }
         }}></Button>
       </View>
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -50,10 +58,20 @@ const styles = StyleSheet.create({
     fontSize: 48,
     color: "red"
   },
-  buttonContainer: {
+  form: {
     margin: 20,
     display: 'flex',
+    flexDirection: 'column',
+    gap: 10,
+    alignItems: 'left', 
+    justifyContent: 'left',
+},
+formRow: {
+    display: 'flex',
     flexDirection: 'row',
-    gap: 20,
-  }
+},
+textInput: {
+    backgroundColor: '#eee',
+    width: 100
+}
 });
