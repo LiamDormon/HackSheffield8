@@ -16,7 +16,7 @@ export default function CreateProfile({route}) {
 
     return (
         <View style={styles.container}>
-            <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200}} />
+            <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200, resizeMode: 'contain'}} />
             <Text style={styles.title}>Create Profile</Text>
 
             <View style={styles.form}>

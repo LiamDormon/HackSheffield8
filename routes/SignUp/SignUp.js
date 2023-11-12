@@ -10,7 +10,7 @@ export default function SignUp({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200}} />
+            <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200, resizeMode: 'contain'}} />
             <Text style={styles.title}>Sign Up</Text>
 
             <View style={styles.form}>

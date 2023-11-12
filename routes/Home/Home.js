@@ -6,7 +6,7 @@ import Button from '../../components/Button.js';
 export default function Home({navigation}) {
     return (
         <View style={styles.container}>
-          <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200}} />
+          <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200, resizeMode: 'contain'}} />
           <Text style={styles.title}>You've Got Crabs!</Text>
           <Text> Ending crustacean frustration </Text>
     
