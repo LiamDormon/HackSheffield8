@@ -5,7 +5,7 @@ import Home from "./routes/Home/Home.js";
 import Login from "./routes/Login/Login.js";
 import SignUp from './routes/SignUp/SignUp.js';
 import CreateProfile from './routes/SignUp/CreateProfile.js';
-import Pinching from './routes/Pinching/Pinching.js'
+import Dating from './routes/Dating/Dating.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,7 +19,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} options={{title:"Create an Account"}} />
         <Stack.Screen name="CreateProfile" component={CreateProfile} options={{title: "Create your profile"}} />
-        <Stack.Screen name="Pinching" component={Pinching} />
+        <Stack.Screen name="Dating" component={Dating} />
       </Stack.Navigator>
     </NavigationContainer>
   );

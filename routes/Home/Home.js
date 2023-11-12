@@ -18,8 +18,8 @@ export default function Home({navigation}) {
           <Button title="Sign Up" onPress={() => {
             navigation.navigate('SignUp');
           }}></Button>
-          <Button title="Pinching" onPress={() => {
-            navigation.navigate('Pinching')
+          <Button title="Dating" onPress={() => {
+            navigation.navigate('Dating')
           }}></Button>
         </View>
   
