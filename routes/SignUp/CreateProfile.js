@@ -6,7 +6,7 @@ import SelectDropdown from 'react-native-select-dropdown'
 import Slider from '@react-native-community/slider'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function CreateProfile({route}) {
+export default function CreateProfile({route, navigation}) {
     const [name, setName] = useState('');
     const [gender, setGender] = useState('');
     const [species, setSpecies] = useState('');
@@ -80,7 +80,8 @@ export default function CreateProfile({route}) {
                         bio
                     }
 
-                    AsyncStorage.setItem('@localuser', JSON.stringify(user)).then(() => alert('User created!'));
+                    AsyncStorage.setItem('@localuser', JSON.stringify(user)).then(() => alert('Confirm you are not a lobster to proceed.'));
+                    navigation.navigate('SwipingPage')
                 }}></Button>
             </View>
         

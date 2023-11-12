@@ -18,9 +18,6 @@ export default function Home({navigation}) {
           <Button title="Sign Up" onPress={() => {
             navigation.navigate('SignUp');
           }}></Button>
-          <Button title="Dating" onPress={() => {
-            navigation.navigate('Dating')
-          }}></Button>
         </View>
   
         <StatusBar style="auto" />
