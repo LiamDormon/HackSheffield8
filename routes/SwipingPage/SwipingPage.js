@@ -7,6 +7,17 @@ function EditProfile() {
     
 } 
 
+const images = [
+  require("../../assets/ProfilePics/0.jpg"),
+  require("../../assets/ProfilePics/1.jpg"),
+  require("../../assets/ProfilePics/2.jpg"),
+  require("../../assets/ProfilePics/3.jpg"),
+  require("../../assets/ProfilePics/4.jpg"),
+  require("../../assets/ProfilePics/5.jpg"),
+  require("../../assets/ProfilePics/6.jpg"),
+  require("../../assets/ProfilePics/7.jpg")
+]
+
 export default function SwipingPage() {
   const [name, setName] = useState("Eugene Krabs");
   const [age, setAge] = useState(15);
@@ -15,17 +26,12 @@ export default function SwipingPage() {
   const [location, setLocation] = useState("United Kingdom")
   const [bio, setBio] = useState("...")
 
-  const [imageSource, setImageSource] = useState('');
-
-  
-  const generateRandomImage = () => { 
-    const pics= Math.floor(Math.random() * 8).toString
-    setImageSource("../../assets/ProfilePics/"+pics+".jpg")
+  function getImage() {
+    return images[Math.floor(Math.random() * images.length)];
   }
-  generateRandomImage()
 
   return (
-    <ImageBackground source={{ uri: imageSource }} style={styles.container}>
+    <ImageBackground source={getImage()} style={styles.container}>
       <Text style={styles.title}>Placeholder</Text>
       <Text>Placeholder Bio</Text>
       <StatusBar style="auto" />
