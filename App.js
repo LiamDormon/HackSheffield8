@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "./routes/Home/Home.js";
 import Login from "./routes/Login/Login.js";
 import SignUp from './routes/SignUp/SignUp.js';
-import SwipingPage from "./routes/SwipingPage/SwipingPage.js"
+import Pinching from './routes/Pinching/Pinching.js'
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +17,7 @@ export default function App() {
         }} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="Pinching" component={Pinching} />
       </Stack.Navigator>
     </NavigationContainer>
   );

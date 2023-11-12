@@ -1,21 +1,19 @@
+
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
-function EditProfile() {
-    
-} 
-
 export default function SwipingPage() {
 
-const [name, setName] = useState("Eugene Krabs");
-const [age, setAge] = useState(15);
-const [gender, setGender] = useState("Male")
-const [species, setSpecies] = useState("Blue Crabs")
-const [location, setLocation] = useState("United Kingdom")
-const [bio, setBio] = useState("...")
+  const [name, setName] = useState("Eugene Krabs");
+  const [age, setAge] = useState(15);
+  const [gender, setGender] = useState("Male")
+  const [species, setSpecies] = useState("Blue Crabs")
+  const [location, setLocation] = useState("United Kingdom")
+  const [bio, setBio] = useState("...")
 
+  Pinching();
 
   return (
     <View style={styles.container}>
