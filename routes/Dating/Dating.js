@@ -9,18 +9,25 @@ import Animated, {
   useAnimatedStyle,
 } from 'react-native-reanimated';
 
+const crabProfiles = require('../../profiles.json');
 
 
+console.log(crabProfiles[1].name);
 export default function Dating() {
-
+    let evalue = 1;
+    const [mate, setMate] = useState(0)
     const pinchGesture = Gesture.Pinch()
       .onUpdate((e) => {
         console.log(e.scale)
       })
       .onEnd((e) => {
         console.log("End");
+        evalue = e.scale
+        console.log("evalue: " + evalue)
+        
       })
-    // evalue > 1 ? SetMate(Mate + 1) && setEvalue(1) : setEvalue(1);
+      // evalue > 1 ? setMate(mate + 1) : null;
+      // console.log("You now have {mate} mates");
 
   return (
     <>
@@ -30,9 +37,10 @@ export default function Dating() {
           </GestureDetector>
         </GestureHandlerRootView>
 
+
         <View style={styles.footcontainer}>
-            <Text style={styles.title}>Placeholder, [Age]</Text>
-            <Text>Placeholder Bio</Text>
+            <Text style={styles.title}>{crabProfiles[0].name}, {crabProfiles[0].age}</Text>
+            <Text>{crabProfiles[0].bio}</Text>
         <StatusBar style="auto" />
         </View>
     </>
