@@ -238,5 +238,13 @@
         "species": "Mangrove Crab",
         "ocean": "Indian",
         "bio": "Life's better in the mangroves."
+    },
+    {
+        "name": "Eugene Krabs",
+        "gender": "Male",
+        "age": "15",
+        "species": "Red King Crab",
+        "ocean": "Pacific",
+        "bio": "Money."
     }
 ]

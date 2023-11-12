@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 import Button from '../../components/Button.js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function Login() {
+export default function Login({navigation}) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -34,6 +34,7 @@ export default function Login() {
           if (user) {
             if (user.username === username && user.password === password) {
               alert('Logged in!');
+              navigation.navigate('SwipingPage')
             } else {
               alert('Incorrect username or password.');
             }
