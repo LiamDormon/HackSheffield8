@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
-
+import { Gesture, GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
+import Animated from 'react-native-reanimated';
 
 function EditProfile() {
     
@@ -28,6 +29,17 @@ export default function SwipingPage() {
   const [location, setLocation] = useState("United Kingdom")
   const [bio, setBio] = useState("...")
 
+  const pinchGesture = Gesture.Pinch()
+  .onEnd((e) => {
+    let evalue = e.scale
+    console.log(evalue)
+    if (evalue > 1) {
+      console.log("You liked this")
+    } else {
+      console.log("You disliked this")
+    }
+  })
+
   function getImage() {
     return images[Math.floor(Math.random() * images.length)];
   }
@@ -47,26 +59,45 @@ export default function SwipingPage() {
   }, []); 
 
   return (
-    <ImageBackground source={getImage()} style={styles.container}>
-      <Text style={styles.title}>{name}, {age}</Text>
-      <Text>{bio}</Text>
-      <StatusBar style="auto" />
-    </ImageBackground>
+    <>
+        <GestureHandlerRootView style={styles.container}>
+          <GestureDetector gesture={pinchGesture}>
+            <Animated.View style={{height: "100%", width: "100%"}}>
+              <ImageBackground source={getImage()} style={styles.container}>
+                <Text style={styles.title}>{name}, {age}</Text>
+                <Text>{bio}</Text>
+              </ImageBackground>
+            </Animated.View>
+          </GestureDetector>
+        </GestureHandlerRootView>
+
+
+    </>
+
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    display: 'flex',
     alignItems: 'center', 
-    width: null,
-    height: null,
-    padding: 40,
-    paddingTop: 100,
+    width: "100%",
+    height: "100%",
   },
   title: {
     fontSize: 48,
-    color: "red"
-  }
+    color: "red",
+    marginTop: 100,
+  },
+  pinchContainer: {
+    alignItems: 'center', 
+    justifyContent: 'center',
+    bottom: 0
+  },
+  pinchBox: {
+    height: 300,
+    width: 400,
+    backgroundColor: 'red', //Remove colour when you're finished.
+  },
 });
 
