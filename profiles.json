@@ -13,7 +13,7 @@
         "age": "6",
         "species": "Blue Crab",
         "ocean": "Atlantic",
-        "bio": "Feeling blue and loving it."
+        "bio": "I got blue balls rn."
     },
     {
         "name": "Shelly",
@@ -32,7 +32,7 @@
         "bio": "Long live the king."
     },
     {
-        "name": "Snowy",
+        "name": "Frosty",
         "gender": "Female",
         "age": "4",
         "species": "Snow Crab",
@@ -40,7 +40,7 @@
         "bio": "Chilling in the cold."
     },
     {
-        "name": "Rocky",
+        "name": "Dwayne",
         "gender": "Male",
         "age": "5",
         "species": "Rock Crab",
@@ -48,7 +48,7 @@
         "bio": "Solid as a rock."
     },
     {
-        "name": "Dungeness",
+        "name": "Susan",
         "gender": "Female",
         "age": "6",
         "species": "Dungeness Crab",
@@ -56,7 +56,7 @@
         "bio": "Living the high life in the Pacific."
     },
     {
-        "name": "Ghost",
+        "name": "Dave",
         "gender": "Male",
         "age": "3",
         "species": "Ghost Crab",
@@ -64,23 +64,23 @@
         "bio": "I might be transparent, but my personality isn't."
     },
     {
-        "name": "Fiddler",
+        "name": "Jimmy",
         "gender": "Female",
         "age": "4",
         "species": "Fiddler Crab",
         "ocean": "Atlantic",
-        "bio": "Playing the tune of the tides."
+        "bio": "Jim'll fix it."
     },
     {
-        "name": "Horseshoe",
+        "name": "Shoe-san",
         "gender": "Male",
         "age": "7",
         "species": "Horseshoe Crab",
         "ocean": "Pacific",
-        "bio": "Older than the dinosaurs and still kicking."
+        "bio": "Hung like a horse."
     },
     {
-        "name": "Mud",
+        "name": "Steve",
         "gender": "Male",
         "age": "2",
         "species": "Mud Crab",
@@ -88,23 +88,23 @@
         "bio": "Down and dirty, that's me."
     },
     {
-        "name": "Sponge",
+        "name": "Bob",
         "gender": "Female",
         "age": "3",
         "species": "Sponge Crab",
         "ocean": "Atlantic",
-        "bio": "Soaking up the good life."
+        "bio": "I'm fucking spongebob baby."
     },
     {
-        "name": "Pea",
+        "name": "Peater",
         "gender": "Male",
         "age": "1",
         "species": "Pea Crab",
         "ocean": "Pacific",
-        "bio": "Small but mighty."
+        "bio": "Wanna see my peanis."
     },
     {
-        "name": "Decorator",
+        "name": "Martha",
         "gender": "Female",
         "age": "5",
         "species": "Decorator Crab",
@@ -112,7 +112,7 @@
         "bio": "I've got a flair for design."
     },
     {
-        "name": "Boxer",
+        "name": "Muhammed",
         "gender": "Male",
         "age": "4",
         "species": "Boxer Crab",
@@ -120,7 +120,7 @@
         "bio": "Always ready for a fight."
     },
     {
-        "name": "Hermit",
+        "name": "Helen",
         "gender": "Female",
         "age": "6",
         "species": "Hermit Crab",
@@ -136,7 +136,7 @@
         "bio": "Living in the deep, where it's cool."
     },
     {
-        "name": "Spider",
+        "name": "Mary Jane",
         "gender": "Female",
         "age": "3",
         "species": "Spider Crab",
@@ -144,7 +144,7 @@
         "bio": "Long legs, don't care."
     },
     {
-        "name": "Tasmanian",
+        "name": "Tammy",
         "gender": "Male",
         "age": "5",
         "species": "Tasmanian Giant Crab",
@@ -152,15 +152,15 @@
         "bio": "Big and bold, that's me."
     },
     {
-        "name": "Coconut",
+        "name": "Coco",
         "gender": "Female",
         "age": "4",
         "species": "Coconut Crab",
         "ocean": "Indian",
-        "bio": "Living the tropical dream."
+        "bio": "Bouta bust a massive coconut."
     },
     {
-        "name": "Mitten",
+        "name": "Fluffy",
         "gender": "Male",
         "age": "3",
         "species": "Mitten Crab",
@@ -176,15 +176,15 @@
         "bio": "Delicate but strong."
     },
     {
-        "name": "Stone",
+        "name": "Percy",
         "gender": "Male",
         "age": "4",
         "species": "Stone Crab",
         "ocean": "Atlantic",
-        "bio": "Hard as a rock."
+        "bio": "Hard as a rock when I see you."
     },
     {
-        "name": "Emerald",
+        "name": "Villager no.3",
         "gender": "Female",
         "age": "5",
         "species": "Emerald Crab",
@@ -200,12 +200,12 @@
         "bio": "Small but sturdy."
     },
     {
-        "name": "Sand",
+        "name": "Anakin",
         "gender": "Female",
         "age": "3",
         "species": "Sand Crab",
         "ocean": "Atlantic",
-        "bio": "Life's a beach."
+        "bio": "I hate sand, it's course, rough and get's everywhere."
     },
     {
         "name": "Rainbow",
@@ -224,7 +224,7 @@
         "bio": "Living in a colorful world."
     },
     {
-        "name": "Giant",
+        "name": "Morturg",
         "gender": "Male",
         "age": "6",
         "species": "Giant Crab",
@@ -232,7 +232,7 @@
         "bio": "Size matters."
     },
     {
-        "name": "Mangrove",
+        "name": "Sandy",
         "gender": "Female",
         "age": "3",
         "species": "Mangrove Crab",
