@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 
 
@@ -18,6 +18,8 @@ const images = [
   require("../../assets/ProfilePics/7.jpg")
 ]
 
+const profiles = require('../../profiles.json');
+
 export default function SwipingPage() {
   const [name, setName] = useState("Eugene Krabs");
   const [age, setAge] = useState(15);
@@ -30,10 +32,24 @@ export default function SwipingPage() {
     return images[Math.floor(Math.random() * images.length)];
   }
 
+  function getRandomProfile() {
+    const randomProfile = profiles[Math.floor(Math.random() * profiles.length)];
+    setName(randomProfile.name);
+    setAge(randomProfile.age);
+    setGender(randomProfile.gender)
+    setSpecies(randomProfile.species)
+    setLocation(randomProfile.ocean)
+    setBio(randomProfile.bio)
+  }
+
+  useEffect(() => {
+    getRandomProfile();
+  }, []); 
+
   return (
     <ImageBackground source={getImage()} style={styles.container}>
-      <Text style={styles.title}>Placeholder</Text>
-      <Text>Placeholder Bio</Text>
+      <Text style={styles.title}>{name}, {age}</Text>
+      <Text>{bio}</Text>
       <StatusBar style="auto" />
     </ImageBackground>
   );
@@ -45,6 +61,8 @@ const styles = StyleSheet.create({
     alignItems: 'center', 
     width: null,
     height: null,
+    padding: 40,
+    paddingTop: 100,
   },
   title: {
     fontSize: 48,
