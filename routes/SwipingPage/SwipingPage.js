@@ -49,6 +49,7 @@ export default function SwipingPage() {
   return (
     <ImageBackground source={getImage()} style={styles.container}>
       <Text style={styles.title}>{name}, {age}</Text>
+      <Text>{species}, {location}</Text>
       <Text>{bio}</Text>
       <StatusBar style="auto" />
     </ImageBackground>
