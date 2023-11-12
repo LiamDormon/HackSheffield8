@@ -1,11 +1,12 @@
-import React from 'react'
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image} from 'react-native';
+import React, {useState} from 'react'
+import { StyleSheet, Text, View, Image, TextInput} from 'react-native';
 import Button from '../../components/Button.js';
 
 
 export default function MatchMsg({route}) {
-    matchName = route?.params?.name ?? "Crab"
+    const [msg, setMsg] = useState('')
+
+    matchName = route?.params?.matchName ?? "Crab"
     return (
         <View style={styles.container}>
             <Image source={require("../../assets/logo.png")} style={{width: 200, height: 200, resizeMode: 'contain'}} />
@@ -14,9 +15,9 @@ export default function MatchMsg({route}) {
     
             <View style={styles.msgContainer}>
                 <View style={styles.messages}>
-                    <Veiw style={received}>
+                    <View style={styles.received}>
                         <Text>Heeey</Text>
-                    </Veiw>
+                    </View>
                 </View>
                 <View style={styles.formLine}>
                     <TextInput
@@ -24,7 +25,6 @@ export default function MatchMsg({route}) {
                         onChangeText={setMsg}
                         placeholder="Type here" />
                     <Button title="Send" onPress={() => {
-                        navigation.navigate('SignUp');
                     }}></Button>
                 </View>
             </View>

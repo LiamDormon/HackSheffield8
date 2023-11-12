@@ -40,7 +40,8 @@ export default function SwipingPage({navigation}) {
     if (evalue < 1) {
       let random = Math.random()
       if (random > 0.8) {
-        runOnJS(alert)("You have a new mate!")
+        runOnJS(alert)("You have a new Crush-tation!")
+        runOnJS(navigation.navigate)('MatchMsg', {matchName: name})
       }
       runOnJS(navigation.push)('SwipingPage')
     } else {
